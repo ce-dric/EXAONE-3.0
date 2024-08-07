@@ -12,7 +12,7 @@ supposed [Docker](https://www.docker.com/products/docker-desktop/) is installed.
 root@473c7bb9aa01:/workspace# pip install transformers accelerate
 ```
 
-### Hugging Face login-in
+### Hugging Face login
 
 Before starting, need a hugging face ID and access to the [repository](https://huggingface.co/LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct). <br>
 
@@ -21,11 +21,11 @@ Token starts with `hf_`
 
 ```
 root@473c7bb9aa01:/workspace# huggingface-cli login
-...
+~
     To login, `huggingface_hub` requires a token generated from https://huggingface.co/settings/tokens .
-Enter your token (input will not be visible): # type token here
+Enter your token (input will not be visible): **TYPE TOKEN HERE**
 Add token as git credential? (Y/n) n
-...
+~~
 Login successful
 ```
 
@@ -38,4 +38,4 @@ Test it by changing the `prompt` in the python file (line 13:14). <br>
 root@473c7bb9aa01:/workspace# python quickstart.py
 ```
 
-Note that it's inefficient to load the model every time.
+> Note that it's inefficient to load the model every time.
